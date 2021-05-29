@@ -1,0 +1,37 @@
+.library {
+  background-color: rgb(245, 245, 245);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20em;
+  height: 100%;
+  box-shadow: 2px 2px 50px gray;
+  overflow-y: scroll;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: 300ms;
+}
+
+h2 {
+  text-align: center;
+  padding: 1em;
+}
+
+.library-songs {
+  display: flex;
+  // justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+  padding: 1em;
+
+  img {
+    width: 50%;
+    border-radius: 50%;
+  }
+}
+
+.active-library {
+  transform: translateX(0);
+  opacity: 1;
+}
